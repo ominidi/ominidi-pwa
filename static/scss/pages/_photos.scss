@@ -1,0 +1,31 @@
+.photos {
+    @include breakpoint(min-width 1024px) {
+        padding: 33px 0;
+    }
+
+    &__content {
+        // Min height equal to a row of photos
+        // to avoid flash content
+        min-height: 307px;
+        position: relative;
+    }
+
+    &__item {
+        flex: 0 1 auto;
+
+        @include breakpoint(min-width 768px) {
+            margin: 0 7.5px;
+        }
+    }
+
+    .photos__feed {
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(min-width 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}

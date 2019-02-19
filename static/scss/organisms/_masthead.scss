@@ -1,0 +1,36 @@
+.masthead {
+    background-color: black;
+    padding-bottom: (9 / 21) * 100%;
+    position: relative;
+    width: 100%;
+
+    &__title {
+        color: $white;
+        font-size: 2.875em;
+        font-weight: bold;
+        left: 0;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        text-shadow: 1px 1px 0 $black;
+        text-transform: uppercase;
+        width: 100%;
+
+        @include breakpoint(min-width 1024px) {
+            font-size: 3.375em;
+        }
+    }
+
+    &__logo {
+        max-width: 95%;
+
+        @include breakpoint(min-width 768px) {
+            max-width: 500px;
+        }
+
+        @include breakpoint(min-width 1024px) {
+            max-width: 700px;
+        }
+    }
+}
