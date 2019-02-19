@@ -1,0 +1,19 @@
+## Editor
+.idea/
+.vscode
+
+## OSX
+.DS_Store
+
+## Windows
+Thumbs.db
+Desktop.ini
+
+## NodeJS
+node_modules
+logs
+*.log
+.npm
+npm-debug.log*
+out/
+.next/
