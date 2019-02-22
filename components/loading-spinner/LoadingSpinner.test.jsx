@@ -3,7 +3,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import LoadingSpinner from './LoadingSpinner';
 
-describe('#LoadingSpinner', () => {
+describe('LoadingSpinner', () => {
   it('should show a loading spinner when load property is true', () => {
     const wrapper = shallow(<LoadingSpinner loading />);
 

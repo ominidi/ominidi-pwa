@@ -6,7 +6,6 @@ const PHOTO = 'photo';
 
 /**
  * Render a feed oh photos.
- *
  * @author Gabriele D'Arrigo <darrigo.g@gmail.com>
  */
 export default class Feed extends React.Component {
@@ -28,15 +27,17 @@ export default class Feed extends React.Component {
   }
 
   render() {
+    const { loading, posts } = this.state;
+
     return (
       <div className="feed photos__feed">
-        <LoadingSpinner loading={this.state.loading} />
+        <LoadingSpinner loading={loading} />
 
         {
-                    this.state.posts
-                      .filter(post => post.type === PHOTO)
-                      .map((post, i) => (<Photo {...post} key={i} />))
-                }
+          posts
+            .filter(post => post.type === PHOTO)
+            .map(post => <Photo {...post} key={post.id} />)
+        }
       </div>
     );
   }

@@ -9,16 +9,20 @@ import PropTypes from 'prop-types';
  * @returns {XML}
  * @constructor
  */
-const Photo = props => (
-  <div className="photos__item" data-id={props.id}>
+const Photo = ({
+  id,
+  message,
+  fullPicture,
+}) => (
+  <div className="photos__item" data-id={id}>
     <article className="card">
       <figure className="card__picture">
-        <img src={props.fullPicture} title={props.message} alt={props.message} />
+        <img src={fullPicture} title={message} alt={message} />
       </figure>
 
       <footer className="card__footer">
         <h5 className="card__caption title-6">
-          { props.message }
+          { message }
         </h5>
       </footer>
     </article>
@@ -26,12 +30,9 @@ const Photo = props => (
 );
 
 Photo.propTypes = {
-  message: PropTypes.string,
-  objectId: PropTypes.string,
-  link: PropTypes.string,
-  picture: PropTypes.string,
-  fullPicture: PropTypes.string,
-  id: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired,
+  fullPicture: PropTypes.string.isRequired,
 };
 
 export default Photo;

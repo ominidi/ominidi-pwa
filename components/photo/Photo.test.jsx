@@ -12,8 +12,8 @@ const data = {
   id: '221685698257476_221946658231380',
 };
 
-describe('#Photo', () => {
-  it('represent a single photo of the feed', () => {
+describe('Photo', () => {
+  it('is a single photo of the feed', () => {
     const wrapper = shallow(<Photo {...data} />);
 
     assert.equal(wrapper.hasClass('photos__item'), true);

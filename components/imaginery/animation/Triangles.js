@@ -42,14 +42,16 @@ const start = (renderer, scene, camera, objs = []) => {
     const timeDiff = time - lastTime;
     const angleChange = ANGULAR_SPEED * timeDiff * 2 * Math.PI / 750;
 
+    /* eslint-disable */
     objs.forEach((obj) => {
       obj.rotation.y += angleChange / randomNumber(4, 5);
       obj.rotation.x += angleChange / randomNumber(11, 12);
     });
+    /* eslint-enable */
 
     lastTime = time;
     renderer.render(scene, camera);
-    requestAnimationFrame(() => animate());
+    window.requestAnimationFrame(() => animate());
   };
 };
 
