@@ -5,17 +5,17 @@
 
 ### Description
 
-The progressive web application for [https://www.ominidi.org](https://www.ominidi.org).  
+The progressive web application for [https://www.ominidi.org](https://www.ominidi.org).
 
 ### Installation and run
 
 Clone the repository, then install all application's dependencies:
 
-    $ npm install
-    
+  $ npm install
+
 Build javascript package:
 
-    $ npm run build
+  $ npm run build
 
 Launch application's tests with Jest framework:
 
@@ -23,5 +23,5 @@ Launch application's tests with Jest framework:
 
 Run the application:
 
-	$ npm run dev 
-	
+	$ npm run dev
+
