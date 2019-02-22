@@ -15,6 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "next": "^8.0.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "three": "^0.101.1"
@@ -30,6 +31,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
     "jest": "^24.1.0",
+    "react-test-renderer": "^16.8.3",
     "sinon": "^7.2.4"
   }
 }
