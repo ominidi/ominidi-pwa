@@ -9,16 +9,14 @@ import PropTypes from 'prop-types';
  * @returns {XML}
  * @constructor
  */
-const LoadingSpinner = (props) => {
-    return (
-        <div className={props.loading ? 'loading-spinner loading' : 'loading-spinner'}>
-            <div className="loading-spinner__animation"></div>
-        </div>
-    );
-};
+const LoadingSpinner = props => (
+  <div className={props.loading ? 'loading-spinner loading' : 'loading-spinner'}>
+    <div className="loading-spinner__animation" />
+  </div>
+);
 
 LoadingSpinner.propTypes = {
-    loading: PropTypes.bool
+  loading: PropTypes.bool,
 };
 
 export default LoadingSpinner;

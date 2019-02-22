@@ -4,31 +4,29 @@ import Feed from './photos/Feed';
 import Imaginery from './imaginery/Imaginery';
 
 function renderFeed() {
-    const container = document.querySelector('.photos__content');
+  const container = document.querySelector('.photos__content');
 
-    if (container) {
-        dom.render(<Feed />, container);
-    }
+  if (container) {
+    dom.render(<Feed />, container);
+  }
 }
 
 function renderImaginery() {
-    function getRatio() {
-        const isMobile = window.matchMedia('(max-width: 768px)').matches;
-        const width = window.document.body.clientWidth;
-        const height = (width * 9) / 21;
+  function getRatio() {
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    const width = window.document.body.clientWidth;
+    const height = (width * 9) / 21;
 
-        return {
-            width: width,
-            height: height,
-            ratio: width / height,
-            isMobile: isMobile
-        };
-    }
+    return {
+      width,
+      height,
+      ratio: width / height,
+      isMobile,
+    };
+  }
 
-    dom.render(<Imaginery getRatio={ getRatio }/>, document.querySelector('.imaginery__placeholder'));
+  dom.render(<Imaginery getRatio={getRatio} />, document.querySelector('.imaginery__placeholder'));
 }
 
 renderFeed();
-//renderImaginery();
-
-
+// renderImaginery();
