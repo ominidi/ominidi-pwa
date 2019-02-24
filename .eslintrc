@@ -7,6 +7,20 @@
     "window": true
   },
   "rules": {
-    "max-len": ["warn", 120]
+    "max-len": [
+      "warn",
+      120
+    ],
+    "import/no-unresolved": [
+      "error",
+      {
+        "commonjs": true,
+        "ignore": [
+          "^~static",
+          "^~components",
+          "^~templates"
+        ]
+      }
+    ]
   }
 }
