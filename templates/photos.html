@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta th:replace="partials/meta">
+</head>
+<body>
+    <header th:replace="partials/header"></header>
+
+    <main id="main" class="main">
+        <section class="section-template photos">
+            <header class="section__header">
+                <h2 class="section__title title-2">
+                    Foto
+                </h2>
+            </header>
+
+            <div class="photos__content"></div>
+        </section>
+
+        <footer th:replace="partials/footer"></footer>
+    </main>
+</body>
+</html>
