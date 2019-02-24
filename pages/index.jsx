@@ -1,6 +1,7 @@
 /* eslint react/jsx-one-expression-per-line: off */
 /* eslint max-len: off */
 import React from 'react';
+import '../static/scss/style.scss';
 
 const Index = () => (
   <section className="section-template manifest">
@@ -25,7 +26,8 @@ const Index = () => (
         Di questa famiglia fanno parte gli oranghi, i gorilla, gli scimpanzé, i bonobo, il genere
         <em>
           <a href="https://it.wikipedia.org/wiki/Homo">Homo</a>
-        </em> e alcuni gruppi fossili, tra i quali gli australopitechi [...][^1]
+        </em>
+         e alcuni gruppi fossili, tra i quali gli australopitechi [...][^1]
       </p>
 
       <h4 className="color-white">1.2 Evoluzione</h4>
