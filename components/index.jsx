@@ -1,10 +1,10 @@
 import React from 'react';
 import dom from 'react-dom';
-import Feed from './photos/Feed';
+import Feed from './feed/Feed';
 import Imaginery from './imaginery/Imaginery';
 
 function renderFeed() {
-  const container = document.querySelector('.photos__content');
+  const container = window.document.querySelector('.photos__content');
 
   if (container) {
     dom.render(<Feed />, container);
@@ -25,8 +25,8 @@ function renderImaginery() {
     };
   }
 
-  dom.render(<Imaginery getRatio={getRatio} />, document.querySelector('.imaginery__placeholder'));
+  dom.render(<Imaginery getRatio={getRatio} />, window.document.querySelector('.imaginery__placeholder'));
 }
 
 renderFeed();
-// renderImaginery();
+renderImaginery();
