@@ -3,6 +3,12 @@ node_js:
   - "node"
 cache: npm
 script:
+  - npm run lint
   - npm run test -- --coverage
 after_success:
  - bash <(curl -s https://codecov.io/bash)
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU_API_KEY
+    app: ominidi
