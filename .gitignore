@@ -17,3 +17,7 @@ logs
 npm-debug.log*
 out/
 .next/
+
+## Jest
+
+coverage/
