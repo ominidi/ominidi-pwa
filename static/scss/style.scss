@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'LiberationSans';
-    src: url('/fonts/LiberationSans-Regular.woff') format('woff'),
-         url('/fonts/LiberationSans-Regular.ttf')  format('truetype');
+    src: url('/static/fonts/LiberationSans-Regular.woff') format('woff'),
+         url('/static/fonts/LiberationSans-Regular.ttf')  format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 html {
-    background: url("/img/concrete_seamless.png") repeat;
+    background: url("/static/img/concrete_seamless.png") repeat;
     font-size: 15px;
 
     @include breakpoint(min-width 1024px) {
