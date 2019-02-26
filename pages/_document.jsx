@@ -27,7 +27,7 @@ class MyDocument extends Document {
           <meta property="og:site_name" content="Ominidi.org" />
 
           <link rel="manifest" href="/static/manifest.json" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/apple-touch-icon.png" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/img/icons/apple-touch-icon.png" />
           <link rel="icon" type="image/x-icon" href="favicon.ico" />
         </Head>
         <body>
