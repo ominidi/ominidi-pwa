@@ -1,8 +1,8 @@
 /* eslint react/jsx-one-expression-per-line: off */
 /* eslint max-len: off */
 import React from 'react';
-import '~static/scss/style.scss';
 import Layout from '../components/layout/Layout';
+import '~static/scss/style.scss';
 
 const Index = () => (
   <Layout>

@@ -1,14 +1,14 @@
 .error {
-    &__content {
-        min-height: 300px;
-        position: relative;
+    height: 100vh;
 
-        @include breakpoint(min-width 768px) {
-            min-height: 550px;
-        }
+    &__figure {
+      border: 1px solid;
+      margin: 1em auto;
+      padding: 0.5em;
 
-        .imaginery {
-            filter: grayscale(100%);
-        }
+      img {
+        display: block;
+        width: 100%;
+      }
     }
 }
