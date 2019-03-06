@@ -1,5 +1,3 @@
-/* eslint react/jsx-one-expression-per-line: off */
-/* eslint max-len: off */
 import React from 'react';
 import Page from '../layouts/page/Page';
 import '~static/scss/style.scss';
@@ -13,7 +11,10 @@ const Downloads = () => (
 
       <div className="downloadebles">
         <h4>
-          <a href="https://github.com/ominidi/downloads/tree/master/stickers" title="Clicca qui per scaricare gli adesivi">
+          <a
+            href="https://github.com/ominidi/downloads/tree/master/stickers"
+            title="Clicca qui per scaricare gli adesivi"
+          >
             Adesivi / Stickers
           </a>
         </h4>
@@ -24,7 +25,10 @@ const Downloads = () => (
 
       <div className="downloadebles">
         <h4>
-          <a href="https://github.com/ominidi/downloads/tree/master/photos" title="Clicca qui per scaricare le foto">
+          <a
+            href="https://github.com/ominidi/downloads/tree/master/photos"
+            title="Clicca qui per scaricare le foto"
+          >
             Foto
           </a>
         </h4>
@@ -35,7 +39,10 @@ const Downloads = () => (
 
       <div className="downloadebles">
         <h4>
-          <a href="https://github.com/ominidi/manifesto/archive/master.zip" title="Clicca qui per scaricare il Manifesto">
+          <a
+            href="https://github.com/ominidi/manifesto/archive/master.zip"
+            title="Clicca qui per scaricare il Manifesto"
+          >
               Manifesto
           </a>
         </h4>
@@ -46,7 +53,10 @@ const Downloads = () => (
 
       <div>
         <h4>
-          <a href="https://github.com/ominidi/design-guidelines/archive/master.zip" title="Clicca qui per scaricare le linee guida del design">
+          <a
+            href="https://github.com/ominidi/design-guidelines/archive/master.zip"
+            title="Clicca qui per scaricare le linee guida del design"
+          >
               Design guidelines
           </a>
         </h4>
