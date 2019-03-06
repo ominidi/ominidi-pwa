@@ -2,28 +2,28 @@ import React from 'react';
 
 const Header = () => (
   <header className="masthead">
-    <div className="imaginery__placeholder" />
-
-    <h1 className="masthead__title">
-      <a
-        href="https://www.ominidi.org"
-        title="Ominidi.org"
-        className="color-white"
-      >
-        <img
-          src="/img/ominidi.org.png"
+    <div className="masthead__content">
+      <div className="imaginery__placeholder" />
+      <h1 className="masthead__title">
+        <a
+          href="https://www.ominidi.org"
           title="Ominidi.org"
-          alt="Ominidi.org"
-          className="masthead__logo"
-        />
-      </a>
-    </h1>
-
+          className="color-white"
+        >
+          <img
+            src="/static/assets/img/ominidi.org.png"
+            title="Ominidi.org"
+            alt="Ominidi.org"
+            className="masthead__logo"
+          />
+        </a>
+      </h1>
+    </div>
     <nav className="navbar">
       <ul className="navbar__menu">
         <li className="navbar__menu__item">
           <a
-            href="/manifesto"
+            href="/"
             title="Manifesto"
             className="navbar__menu__link to-manifest"
           >
@@ -33,7 +33,7 @@ const Header = () => (
 
         <li className="navbar__menu__item">
           <a
-            href="/foto"
+            href="/photo"
             title="Foto"
             className="navbar__menu__link to-photos"
           >
