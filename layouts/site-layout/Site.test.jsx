@@ -1,25 +1,25 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Layout from './Layout';
+import Site from './Site';
 
-describe('Layout', () => {
+describe('Site', () => {
   const children = <div>Children</div>;
 
-  it('should render its children inside layout_content element', () => {
+  it('should render its children inside the site-layout_content element', () => {
     const wrapper = shallow(
-      <Layout>
+      <Site>
         {children}
-      </Layout>,
+      </Site>,
     );
 
-    expect(wrapper.find('.layout__content').prop('children')).toEqual(children);
+    expect(wrapper.find('.site-layout_content').prop('children')).toEqual(children);
   });
 
   it('should render a Footer', () => {
     const wrapper = shallow(
-      <Layout>
+      <Site>
         {children}
-      </Layout>,
+      </Site>,
     );
 
     expect(wrapper.find('Footer').length).toBe(1);

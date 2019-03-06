@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Footer from '../../templates/footer/Footer';
 
-const Layout = ({ children }) => (
-  <div className="layout">
-    <div className="layout__content">
+const Site = ({ children }) => (
+  <div className="site-layout">
+    <div className="site-layout__content">
       {children}
     </div>
 
@@ -12,8 +12,8 @@ const Layout = ({ children }) => (
   </div>
 );
 
-Layout.propTypes = {
+Site.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default Site;
