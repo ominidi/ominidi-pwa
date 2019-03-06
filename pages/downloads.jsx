@@ -29,7 +29,7 @@ const Downloads = () => (
           </a>
         </h4>
         <p>
-          Tutte le foto dei luoghi dove gli Ominidi si sono riappropriati degli spazi dell'Homo Sapiens.
+          Tutte le foto dei luoghi dove gli Ominidi si sono riappropriati degli spazi dell&apos;Homo Sapiens.
         </p>
       </div>
 
