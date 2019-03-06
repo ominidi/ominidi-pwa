@@ -22,46 +22,46 @@ const Attributions = () => (
       </p>
 
       <ul>
-          <li>
-              <a href="http://www.openoffice.org/it/" title="Apache Open Office">
-                  Apache Open Office
-              </a>
-          </li>
-          <li>
-              <a href="https://inkscape.org/it/" title="Inkscape">
-                  Inkscape
-              </a>
-          </li>
-          <li>
-              <a href="https://www.getpaint.net/" title="Paint.net">
-                  Paint.net
-              </a>
-          </li>
-          <li>
-              <a href="http://pencil.evolus.vn/" title="Pencil Project">
-                  Pencil Project
-              </a>
-          </li>
-          <li>
-              <a href="https://www.jetbrains.com/idea/#chooseYourEdition" title="IntelliJ Community Edition">
-                  IntelliJ Community Edition
-              </a>
-          </li>
-          <li>
-              <a href="https://www.virtualbox.org/" title="Virtual Box">
-                  Virtual Box
-              </a>
-          </li>
-          <li>
-              <a href="https://github.com/" title="Github">
-                  Github
-              </a>
-          </li>
-          <li>
-              <a href="https://www.chromium.org/Home" title="Chromium">
-                  Chromium
-              </a>
-          </li>
+        <li>
+          <a href="http://www.openoffice.org/it/" title="Apache Open Office">
+              Apache Open Office
+          </a>
+        </li>
+        <li>
+          <a href="https://inkscape.org/it/" title="Inkscape">
+              Inkscape
+          </a>
+        </li>
+        <li>
+          <a href="https://www.getpaint.net/" title="Paint.net">
+              Paint.net
+          </a>
+        </li>
+        <li>
+          <a href="http://pencil.evolus.vn/" title="Pencil Project">
+              Pencil Project
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jetbrains.com/idea/#chooseYourEdition" title="IntelliJ Community Edition">
+              IntelliJ Community Edition
+          </a>
+        </li>
+        <li>
+          <a href="https://www.virtualbox.org/" title="Virtual Box">
+              Virtual Box
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/" title="Github">
+              Github
+          </a>
+        </li>
+        <li>
+          <a href="https://www.chromium.org/Home" title="Chromium">
+              Chromium
+          </a>
+        </li>
       </ul>
 
       <h3>Sviluppo</h3>
