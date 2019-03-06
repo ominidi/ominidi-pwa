@@ -43,7 +43,7 @@ const Downloads = () => (
             href="https://github.com/ominidi/manifesto/archive/master.zip"
             title="Clicca qui per scaricare il Manifesto"
           >
-              Manifesto
+            Manifesto
           </a>
         </h4>
         <p>
@@ -57,7 +57,7 @@ const Downloads = () => (
             href="https://github.com/ominidi/design-guidelines/archive/master.zip"
             title="Clicca qui per scaricare le linee guida del design"
           >
-              Design guidelines
+            Design guidelines
           </a>
         </h4>
         <p>
