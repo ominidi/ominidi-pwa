@@ -12,7 +12,7 @@ describe('Site', () => {
       </Site>,
     );
 
-    expect(wrapper.find('.site-layout_content').prop('children')).toEqual(children);
+    expect(wrapper.find('.site-layout__content').prop('children')).toEqual(children);
   });
 
   it('should render a Footer', () => {
