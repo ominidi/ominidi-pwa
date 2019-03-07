@@ -1,15 +1,10 @@
 .navbar {
     background-color: $white;
-    border-bottom: 1px solid $grey-200;
     height: 45px;
     position: relative;
     position: sticky;
     top: 0;
     z-index: 1;
-
-    @include breakpoint(min-width 768px) {
-        box-shadow: 0 3px 6px $black;
-    }
 
     &__menu {
         display: flex;
@@ -33,6 +28,7 @@
             color: $black;
             display: block;
             height: 100%;
+            text-indent: -99999px;
 
             &:hover,
             &.current {
@@ -41,7 +37,7 @@
             }
 
             &.to-manifest {
-                background-image: url("/img/icons/ominide_1.svg");
+                background-image: url("/static/assets/img/icons/ominide_1.svg");
 
                 &:hover,
                 &.current {
@@ -50,7 +46,7 @@
             }
 
             &.to-photos {
-                background-image: url("/img/icons/ominide_2.svg");
+                background-image: url("/static/assets/img/icons/ominide_2.svg");
 
                 &:hover,
                 &.current {
@@ -59,7 +55,7 @@
             }
 
             &.to-attributions {
-                background-image: url("/img/icons/ominide_3.svg");
+                background-image: url("/static/assets/img/icons/ominide_3.svg");
 
                 &:hover,
                 &.current {
@@ -68,7 +64,7 @@
             }
 
             &.to-downloads {
-                background-image: url("/img/icons/ominide_4.svg");
+                background-image: url("/static/assets/img/icons/ominide_4.svg");
 
                 &:hover,
                 &.current {

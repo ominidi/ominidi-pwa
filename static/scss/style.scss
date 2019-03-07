@@ -35,26 +35,12 @@ html {
     @include breakpoint(min-width 1024px) {
         font-size: 16px;
     }
-
-    &::after {
-      content: "";
-      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/SantaCruz-CuevaManos-P2210651b.jpg/1200px-SantaCruz-CuevaManos-P2210651b.jpg");
-      background-size: 100% auto;
-      height: 100%;
-      filter: grayscale(100%);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      z-index: -1;
-    }
 }
 
 body {
-    background-color: rgba($black, 0.9);
+    background-color: rgba(0, 0, 0, 0.99);
     color: $white;
     font-family: 'LiberationSans', Arial, Helvetica, sans-serif;
     font-weight: 400;
     line-height: 1.45;
-    text-shadow: 1px 1px 1px black;
 }

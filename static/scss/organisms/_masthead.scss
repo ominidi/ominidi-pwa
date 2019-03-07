@@ -1,8 +1,14 @@
 .masthead {
-    background-color: black;
-    padding-bottom: (9 / 21) * 100%;
-    position: relative;
-    width: 100%;
+    &__content {
+      background-color: black;
+      padding-bottom: (9 / 21) * 100%;
+      position: relative;
+      width: 100%;
+
+      @include breakpoint(min-width 768px) {
+        padding-bottom: (9 / 32) * 100%;
+      }
+    }
 
     &__title {
         color: $white;
