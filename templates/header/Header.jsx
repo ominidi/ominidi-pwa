@@ -3,7 +3,12 @@ import React from 'react';
 const Header = () => (
   <header className="masthead">
     <div className="masthead__content">
-      <div className="imaginery__placeholder" />
+      <div
+        className="imaginery"
+        style={{
+          backgroundImage: 'url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/SantaCruz-CuevaManos-P2210651b.jpg/1200px-SantaCruz-CuevaManos-P2210651b.jpg")',
+        }}
+      />
       <h1 className="masthead__title">
         <a
           href="https://www.ominidi.org"
