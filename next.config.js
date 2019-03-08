@@ -5,6 +5,7 @@ const sass = require('@zeit/next-sass');
 module.exports = withPlugins([
   [sass],
 ], {
+  useFileSystemPublicRoutes: false,
   webpack(config) {
     /* eslint-disable-next-line */
     config.resolve.alias = {

@@ -7,9 +7,9 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start -H 0.0.0.0 -p $PORT"
+    "start": "NODE_ENV=production HOST=0.0.0.0 PORT=$PORT node server.js"
   },
   "heroku-run-build-script": true,
   "keywords": [
@@ -23,6 +23,7 @@
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "breakpoint-sass": "^2.7.1",
+    "express": "^4.16.4",
     "next": "^8.0.3",
     "next-compose-plugins": "^2.1.1",
     "node-sass": "^4.11.0",
