@@ -1,4 +1,28 @@
 import React from 'react';
+import Navbar from '../../components/navbar/Navbar';
+
+const menuItems = [
+  {
+    href: '/',
+    title: 'Manifest',
+    text: 'Manifest',
+  },
+  {
+    href: '/photos',
+    title: 'Photos',
+    text: 'Photos',
+  },
+  {
+    href: '/attributions',
+    title: 'Attributions',
+    text: 'Attributions',
+  },
+  {
+    href: '/downloads',
+    title: 'Downloads',
+    text: 'Downloads',
+  },
+];
 
 const Header = () => (
   <header className="masthead">
@@ -24,49 +48,7 @@ const Header = () => (
         </a>
       </h1>
     </div>
-    <nav className="navbar">
-      <ul className="navbar__menu">
-        <li className="navbar__menu__item">
-          <a
-            href="/"
-            title="Manifesto"
-            className="navbar__menu__link to-manifest"
-          >
-            Manifesto
-          </a>
-        </li>
-
-        <li className="navbar__menu__item">
-          <a
-            href="/photo"
-            title="Foto"
-            className="navbar__menu__link to-photos"
-          >
-            Foto
-          </a>
-        </li>
-
-        <li className="navbar__menu__item">
-          <a
-            href="/attributions"
-            title="Attributions"
-            className="navbar__menu__link to-attributions"
-          >
-            Attributions
-          </a>
-        </li>
-
-        <li className="navbar__menu__item">
-          <a
-            href="/downloads"
-            title="Downloads"
-            className="navbar__menu__link to-downloads"
-          >
-            Downloads
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <Navbar menuItems={menuItems} />
   </header>
 );
 

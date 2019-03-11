@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly 1`] = `
+<header
+  className="masthead"
+>
+  <div
+    className="masthead__content"
+  >
+    <div
+      className="imaginery"
+      style={
+        Object {
+          "backgroundImage": "url(\\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/SantaCruz-CuevaManos-P2210651b.jpg/1200px-SantaCruz-CuevaManos-P2210651b.jpg\\")",
+        }
+      }
+    />
+    <h1
+      className="masthead__title"
+    >
+      <a
+        className="color-white"
+        href="https://www.ominidi.org"
+        title="Ominidi.org"
+      >
+        <img
+          alt="Ominidi.org"
+          className="masthead__logo"
+          src="/static/assets/img/ominidi.org.png"
+          title="Ominidi.org"
+        />
+      </a>
+    </h1>
+  </div>
+  <nav
+    className="navbar"
+  >
+    <ul
+      className="navbar__menu"
+    >
+      <li
+        className="navbar__menu__item"
+      >
+        <a
+          className="navbar__menu__link to-manifest"
+          href="/"
+          title="Manifest"
+        >
+          Manifest
+        </a>
+      </li>
+      <li
+        className="navbar__menu__item"
+      >
+        <a
+          className="navbar__menu__link to-manifest"
+          href="/photos"
+          title="Photos"
+        >
+          Photos
+        </a>
+      </li>
+      <li
+        className="navbar__menu__item"
+      >
+        <a
+          className="navbar__menu__link to-manifest"
+          href="/attributions"
+          title="Attributions"
+        >
+          Attributions
+        </a>
+      </li>
+      <li
+        className="navbar__menu__item"
+      >
+        <a
+          className="navbar__menu__link to-manifest"
+          href="/downloads"
+          title="Downloads"
+        >
+          Downloads
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
