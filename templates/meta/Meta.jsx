@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Head from 'next/head';
 
 const Meta = ({
   title,
@@ -8,7 +7,7 @@ const Meta = ({
   url,
   image,
 }) => (
-  <Head>
+  <React.Fragment>
     <title key="title">
       {title}
     </title>
@@ -37,7 +36,7 @@ const Meta = ({
       content={image}
       key="og:image"
     />
-  </Head>
+  </React.Fragment>
 );
 
 Meta.propTypes = {

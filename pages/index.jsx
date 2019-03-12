@@ -1,12 +1,22 @@
 /* eslint react/jsx-one-expression-per-line: off */
 /* eslint max-len: off */
 import React from 'react';
+import Head from 'next/head';
 import Page from '../layouts/page/Page';
 import Meta from '../templates/meta/Meta';
 import '~static/scss/style.scss';
 
+const head = () => (
+  <Head>
+    <Meta />
+  </Head>
+);
+
 const Index = () => (
-  <Page title="Manifesto">
+  <Page
+    title="Manifesto"
+    render={head}
+  >
     <Meta />
 
     <article>
@@ -173,10 +183,7 @@ const Index = () => (
       </p>
 
       <p>
-        [^3]
-        <a href="http://www.treccani.it/enciclopedia/paleonutrizione_(Universo-del-Corpo)/">
-          Paleonutrizione in “Universo del Corpo” – Treccani
-        </a>
+        [^3] <a href="http://www.treccani.it/enciclopedia/paleonutrizione_(Universo-del-Corpo)/">Paleonutrizione in “Universo del Corpo” – Treccani</a>
       </p>
 
       <p>

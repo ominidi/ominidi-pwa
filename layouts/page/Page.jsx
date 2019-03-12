@@ -4,8 +4,9 @@ import SiteLayout from '../site-layout/Site';
 import Section from '../../templates/section/Section';
 import '~static/scss/style.scss';
 
-const Page = ({ title, children }) => (
+const Page = ({ title, children, render }) => (
   <SiteLayout>
+    {render && render.head()}
     <Section>
       <Section.Header>
         <Section.Title>
@@ -23,6 +24,11 @@ const Page = ({ title, children }) => (
 Page.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+  render: PropTypes.func,
+};
+
+Page.defaultProps = {
+  render: () => {},
 };
 
 export default Page;
