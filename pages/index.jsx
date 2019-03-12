@@ -2,10 +2,13 @@
 /* eslint max-len: off */
 import React from 'react';
 import Page from '../layouts/page/Page';
+import Meta from '../templates/meta/Meta';
 import '~static/scss/style.scss';
 
 const Index = () => (
   <Page title="Manifesto">
+    <Meta />
+
     <article>
       <h3 className="color-white">
         Premessa

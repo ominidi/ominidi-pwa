@@ -11,18 +11,16 @@ class MyDocument extends Document {
     return (
       <html lang="it">
         <Head>
-          <title>Ominidi.org</title>
-
           <meta charset="utf-8" />
-          <meta name="description" content="" />
+          <meta name="description" content="" key="description" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta name="theme-color" content="#181818" />
 
-          <meta property="og:title" content="" />
-          <meta property="og:description" content="" />
+          <meta property="og:title" content="" key="og:title" />
+          <meta property="og:description" content="" key="og:description" />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="" />
-          <meta property="og:image" content="" />
+          <meta property="og:url" content="" key="og:url" />
+          <meta property="og:image" content="" key="og:image" />
           <meta property="og:locale" content="it_IT" />
           <meta property="og:site_name" content="Ominidi.org" />
 
