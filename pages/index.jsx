@@ -15,7 +15,7 @@ const head = () => (
 const Index = () => (
   <Page
     title="Manifesto"
-    render={head}
+    render={{ head }}
   >
     <Meta />
 
