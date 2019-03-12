@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SiteLayout from '../site-layout/Site';
 import Section from '../../templates/section/Section';
-import '~static/scss/style.scss';
 
 const Page = ({ title, children, render }) => (
   <SiteLayout>
@@ -24,11 +23,15 @@ const Page = ({ title, children, render }) => (
 Page.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  render: PropTypes.func,
+  render: PropTypes.shape({
+    head: PropTypes.func,
+  }),
 };
 
 Page.defaultProps = {
-  render: () => {},
+  render: {
+    head: () => { },
+  },
 };
 
 export default Page;
