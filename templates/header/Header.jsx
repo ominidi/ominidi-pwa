@@ -1,28 +1,6 @@
 import React from 'react';
-import Navbar from '../../components/navbar/Navbar';
-
-const menuItems = [
-  {
-    href: '/',
-    title: 'Manifest',
-    text: 'Manifest',
-  },
-  {
-    href: '/photos',
-    title: 'Photos',
-    text: 'Photos',
-  },
-  {
-    href: '/attributions',
-    title: 'Attributions',
-    text: 'Attributions',
-  },
-  {
-    href: '/downloads',
-    title: 'Downloads',
-    text: 'Downloads',
-  },
-];
+import { navItems } from '../../data/common.yml';
+import Navigation from '../../components/navigation/Navigation';
 
 const Header = () => (
   <header className="masthead">
@@ -48,7 +26,7 @@ const Header = () => (
         </a>
       </h1>
     </div>
-    <Navbar menuItems={menuItems} />
+    <Navigation navItems={navItems} />
   </header>
 );
 

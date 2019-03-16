@@ -25,16 +25,23 @@ SEO:
     ogUrl: "https://www.ominidi.org/downloads"
     ogImage: "https://www.ominidi.org/img/downloads.jpg"
 
-menuItems:
+navItems:
   - href: "/"
     title: "Manifest"
     text: "Manifest"
+    icon: "to-manifest"
+
   - href: "/photos"
     title: "Photos"
     text: "Photos"
+    icon: "to-photos"
+
   - href: "/attributions"
     title: "Attributions"
     text: "Attributions"
+    icon: "to-attributions"
+
   - href: "/downloads"
     title: "Downloads"
     text: "Downloads"
+    icon: "to-downloads"

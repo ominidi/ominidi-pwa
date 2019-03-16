@@ -33,16 +33,16 @@ exports[`Header should render correctly 1`] = `
     </h1>
   </div>
   <nav
-    className="navbar"
+    className="navigation"
   >
     <ul
-      className="navbar__menu"
+      className="navigation__menu"
     >
       <li
-        className="navbar__menu__item"
+        className="navigation__item"
       >
         <a
-          className="navbar__menu__link to-manifest"
+          className="navigation__link manifest"
           href="/"
           title="Manifest"
         >
@@ -50,10 +50,10 @@ exports[`Header should render correctly 1`] = `
         </a>
       </li>
       <li
-        className="navbar__menu__item"
+        className="navigation__item"
       >
         <a
-          className="navbar__menu__link to-manifest"
+          className="navigation__link photos"
           href="/photos"
           title="Photos"
         >
@@ -61,10 +61,10 @@ exports[`Header should render correctly 1`] = `
         </a>
       </li>
       <li
-        className="navbar__menu__item"
+        className="navigation__item"
       >
         <a
-          className="navbar__menu__link to-manifest"
+          className="navigation__link attributions"
           href="/attributions"
           title="Attributions"
         >
@@ -72,10 +72,10 @@ exports[`Header should render correctly 1`] = `
         </a>
       </li>
       <li
-        className="navbar__menu__item"
+        className="navigation__item"
       >
         <a
-          className="navbar__menu__link to-manifest"
+          className="navigation__link downloads"
           href="/downloads"
           title="Downloads"
         >

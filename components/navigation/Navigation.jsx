@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Navbar = ({ menuItems }) => (
-  <nav className="navbar">
-    <ul className="navbar__menu">
+const Navigation = ({ navItems }) => (
+  <nav className="navigation">
+    <ul className="navigation__menu">
       {
-        menuItems.map(item => (
+        navItems.map(item => (
           <li
-            className="navbar__menu__item"
+            className="navigation__item"
             key={item.href}
           >
             <a
               href={item.href}
               title={item.title}
-              className="navbar__menu__link to-manifest"
+              className={`navigation__link ${item.icon}`}
             >
               {item.text}
             </a>
@@ -24,8 +24,8 @@ const Navbar = ({ menuItems }) => (
   </nav>
 );
 
-Navbar.propTypes = {
-  menuItems: PropTypes.arrayOf(
+Navigation.propTypes = {
+  navItems: PropTypes.arrayOf(
     PropTypes.shape({
       href: PropTypes.string,
       title: PropTypes.string,
@@ -34,8 +34,8 @@ Navbar.propTypes = {
   ),
 };
 
-Navbar.defaultProps = {
-  menuItems: [],
+Navigation.defaultProps = {
+  navItems: [],
 };
 
-export default Navbar;
+export default Navigation;
