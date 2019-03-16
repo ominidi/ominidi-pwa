@@ -4,26 +4,18 @@ import Head from 'next/head';
 import Meta from '../templates/meta/Meta';
 import data from '../data/common.yml';
 
+async function getSeo(pathname) {
+  const { SEO } = data;
+  return SEO[pathname] || SEO['/index'];
+}
+
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
-    let pageProps = {};
-
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
-    }
-
-    const SEO = await MyApp.getSeo(ctx.pathname);
-
-    return { pageProps, SEO };
-  }
-
-  static async getSeo(pathname) {
-    const { SEO } = data;
-    return SEO[pathname] || SEO['/index'];
-  }
-
   render() {
-    const { Component, pageProps, SEO } = this.props;
+    const {
+      Component,
+      pageProps,
+      SEO
+    } = this.props;
 
     return (
       <Container>
@@ -43,5 +35,17 @@ class MyApp extends App {
     );
   }
 }
+
+MyApp.getInitialProps = async ({ Component, ctx }) => {
+  let pageProps = {};
+
+  if (Component.getInitialProps) {
+    pageProps = await Component.getInitialProps(ctx);
+  }
+
+  const SEO = await getSeo(ctx.pathname);
+
+  return { pageProps, SEO };
+};
 
 export default MyApp;

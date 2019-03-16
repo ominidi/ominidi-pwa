@@ -36,14 +36,17 @@ const Meta = ({
     <meta
       property="og:type"
       content="website"
+      key="og:type"
     />
     <meta
       property="og:locale"
       content="it_IT"
+      key="og:locale"
     />
     <meta
       property="og:site_name"
       content="Ominidi.org"
+      key="og:site_name"
     />
   </React.Fragment>
 );
