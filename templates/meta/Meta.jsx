@@ -4,13 +4,10 @@ import PropTypes from 'prop-types';
 const Meta = ({
   title,
   description,
-  url,
-  image,
+  ogUrl,
+  ogImage,
 }) => (
   <React.Fragment>
-    <title key="title">
-      {title}
-    </title>
     <meta
       name="description"
       content={description}
@@ -28,13 +25,25 @@ const Meta = ({
     />
     <meta
       property="og:url"
-      content={url}
+      content={ogUrl}
       key="og:url"
     />
     <meta
       property="og:image"
-      content={image}
+      content={ogImage}
       key="og:image"
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:locale"
+      content="it_IT"
+    />
+    <meta
+      property="og:site_name"
+      content="Ominidi.org"
     />
   </React.Fragment>
 );
@@ -42,8 +51,8 @@ const Meta = ({
 Meta.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  ogUrl: PropTypes.string.isRequired,
+  ogImage: PropTypes.string.isRequired,
 };
 
 export default Meta;

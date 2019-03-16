@@ -2,7 +2,7 @@
 /* eslint max-len: off */
 import React from 'react';
 import Page from '../layouts/page/Page';
-import '~static/scss/style.scss';
+import '../static/scss/style.scss';
 
 const Attributions = () => (
   <Page title="Attributions">

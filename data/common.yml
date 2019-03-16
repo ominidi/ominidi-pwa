@@ -1,32 +1,32 @@
 SEO:
-  index:
+  /index:
     title: "Ominidi.org"
     description: "Il sito web ufficiale di Ominidi.org"
-    og_url: "https://www.ominidi.org"
-    og_image: "https://www.ominidi.org/img/logo.jpg"
-  manifest:
+    ogUrl: "https://www.ominidi.org"
+    ogImage: "https://www.ominidi.org/img/logo.jpg"
+  /manifest:
     title: "Manifesto - Ominidi.org"
     description: "Il Manifesto di Ominidi.org, il cuore pulsante e primitivo della sua filosofia."
-    og_url: "https://www.ominidi.org/manifesto"
-    og_image: "https://www.ominidi.org/img/manifesto.jpg"
-  photos:
+    ogUrl: "https://www.ominidi.org/manifesto"
+    ogImage: "https://www.ominidi.org/img/manifesto.jpg"
+  /photos:
     title: "Foto - Ominidi.org"
-    description: "Tutte le foto dei luoghi dove gli Ominidi si sono riappropriati degli spazi dell"Homo Sapiens."
-    og_url: "https://www.ominidi.org/foto"
-    og_image: "https://www.ominidi.org/img/foto.jpg"
-  attributions:
+    description: "Tutte le foto dei luoghi dove gli Ominidi si sono riappropriati degli spazi dell Homo Sapiens"
+    ogUrl: "https://www.ominidi.org/foto"
+    ogImage: "https://www.ominidi.org/img/foto.jpg"
+  /attributions:
     title: "Attributions - Ominidi.org"
-    description: "Ominidi.org è stato creato con software e materiali con licenza Free Software, Open Source o CreativeCommons. Qui puoi trovare l"elenco di tutti i software e i materiali utilizzati per la sua creazione"
-    og_url: "https://www.ominidi.org/attributions"
-    og_image: "https://www.ominidi.org/img/attributions.jpg"
-  downloads:
+    description: "Ominidi.org è stato creato con software e materiali con licenza Free Software, Open Source o CreativeCommons. Qui puoi trovare l'elenco di tutti i software e i materiali utilizzati per la sua creazione"
+    ogUrl: "https://www.ominidi.org/attributions"
+    ogImage: "https://www.ominidi.org/img/attributions.jpg"
+  /downloads:
     title: "Downloads - Ominidi.org"
     description: "La pagina dove è possibile scaricare tutte le risose e i materiali relativi di Ominidi.org"
-    og_url: "https://www.ominidi.org/downloads"
-    og_image: "https://www.ominidi.org/img/downloads.jpg"
+    ogUrl: "https://www.ominidi.org/downloads"
+    ogImage: "https://www.ominidi.org/img/downloads.jpg"
 
 menuItems:
-  - href: "/",
+  - href: "/"
     title: "Manifest"
     text: "Manifest"
   - href: "/photos"

@@ -1,24 +1,13 @@
 /* eslint react/jsx-one-expression-per-line: off */
 /* eslint max-len: off */
 import React from 'react';
-import Head from 'next/head';
 import Page from '../layouts/page/Page';
-import Meta from '../templates/meta/Meta';
-import '~static/scss/style.scss';
-
-const head = () => (
-  <Head>
-    <Meta />
-  </Head>
-);
+import '../static/scss/style.scss';
 
 const Index = () => (
   <Page
     title="Manifesto"
-    render={{ head }}
   >
-    <Meta />
-
     <article>
       <h3 className="color-white">
         Premessa
