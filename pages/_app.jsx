@@ -14,7 +14,7 @@ class MyApp extends App {
     const {
       Component,
       pageProps,
-      SEO
+      SEO,
     } = this.props;
 
     return (
