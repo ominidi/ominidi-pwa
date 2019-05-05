@@ -13,10 +13,12 @@ const Navigation = ({ navItems }) => (
             <a
               href={item.href}
               title={item.title}
-              className={`navigation__link ${item.icon}`}
-            >
-              {item.text}
-            </a>
+              className={`navigation__link ${item.className}`}
+              // eslint-disable-next-line react/no-danger
+              dangerouslySetInnerHTML={{
+                __html: item.icon,
+              }}
+            />
           </li>
         ))
       }
@@ -29,7 +31,7 @@ Navigation.propTypes = {
     PropTypes.shape({
       href: PropTypes.string,
       title: PropTypes.string,
-      text: PropTypes.string,
+      icon: PropTypes.node,
     }),
   ),
 };

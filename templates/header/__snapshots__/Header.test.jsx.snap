@@ -4,34 +4,17 @@ exports[`Header should render correctly 1`] = `
 <header
   className="masthead"
 >
-  <div
-    className="masthead__content"
+  <h1
+    className="masthead__title"
   >
-    <div
-      className="imaginery"
-      style={
-        Object {
-          "backgroundImage": "url(\\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/SantaCruz-CuevaManos-P2210651b.jpg/1200px-SantaCruz-CuevaManos-P2210651b.jpg\\")",
-        }
-      }
-    />
-    <h1
-      className="masthead__title"
+    <a
+      className="color-white"
+      href="http://www.ominidi.org"
+      title="Ominidi.org"
     >
-      <a
-        className="color-white"
-        href="https://www.ominidi.org"
-        title="Ominidi.org"
-      >
-        <img
-          alt="Ominidi.org"
-          className="masthead__logo"
-          src="/static/assets/img/ominidi.org.png"
-          title="Ominidi.org"
-        />
-      </a>
-    </h1>
-  </div>
+      Ominidi
+    </a>
+  </h1>
   <nav
     className="navigation"
   >
@@ -42,23 +25,29 @@ exports[`Header should render correctly 1`] = `
         className="navigation__item"
       >
         <a
-          className="navigation__link to-manifest"
+          className="navigation__link undefined"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "to-manifest",
+            }
+          }
           href="/"
           title="Manifest"
-        >
-          Manifest
-        </a>
+        />
       </li>
       <li
         className="navigation__item"
       >
         <a
-          className="navigation__link to-photos"
+          className="navigation__link undefined"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "to-photos",
+            }
+          }
           href="/photos"
           title="Photos"
-        >
-          Photos
-        </a>
+        />
       </li>
     </ul>
   </nav>

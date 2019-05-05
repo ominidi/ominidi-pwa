@@ -1,10 +1,5 @@
 .navigation {
-    background-color: $white;
-    height: 45px;
-    position: relative;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    height: 65px;
 
     &__menu {
         display: flex;
@@ -18,39 +13,59 @@
 
     &__item {
       height: 100%;
-      margin: 0;
-      width: 45px;
+      margin: 0 1rem;
+      width: 60px;
       text-align: center;
+
+      @include breakpoint(min-width 1024px) {
+        margin: 0 2rem;
+      }
   }
 
   &__link {
-      background: center no-repeat;
-      background-size: contain;
-      color: $black;
+      color: $white;
       display: block;
       height: 100%;
-      text-indent: -99999px;
+
+      svg {
+        fill: currentColor;
+      }
 
       &:hover,
       &.current {
-          background-color: $grey-200!important;
           text-decoration: none;
       }
 
       &.to-manifest {
-          background-image: url("/static/assets/img/icons/ominide_1.svg");
+          &.is-active,
+          &:hover {
+            color: $blue-500;
+            border-bottom: 2px solid $blue-500;
+          }
       }
 
       &.to-photos {
-          background-image: url("/static/assets/img/icons/ominide_2.svg");
+          &.is-active,
+          &:hover {
+            color: $magenta-500;
+            border-bottom: 2px solid $magenta-500;
+          }
       }
 
       &.to-attributions {
-          background-image: url("/static/assets/img/icons/ominide_3.svg");
+          &.is-active,
+          &:hover {
+            color: $yellow-500;
+            border-bottom: 2px solid $yellow-500;
+          }
       }
 
       &.to-downloads {
-          background-image: url("/static/assets/img/icons/ominide_4.svg");
+          &.is-active,
+          &:hover {
+            color: $green-500;
+            border-bottom: 2px solid $green-500;
+          }
       }
 
       .i,
