@@ -165,8 +165,7 @@ const Index = () => (
       </p>
 
       <p>
-        [^2] David A. Raichlen, Adam D. Gordon, William E. H. Harcourt-Smith, Adam D. Foster, Wm. Randall Haas,
-          Jr, <br />
+        [^2] David A. Raichlen, Adam D. Gordon, William E. H. Harcourt-Smith, Adam D. Foster, Wm. Randall Haas, Jr <br />
         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2842428/">Laetoli Footprints Preserve Earliest Direct Evidence of Human-Like Bipedal Biomechanics</a>, in PLoS ONE, vol. 5, nº 3, 2010, p. e9769,
           DOI:10.1371/journal.pone.0009769, PMC 2842428, PMID 20339543.
       </p>
@@ -176,7 +175,7 @@ const Index = () => (
       </p>
 
       <p>
-        [^4] Karl Marx,
+        [^4] Karl Marx,  &nbsp;
         <a href="https://www.marxists.org/italiano/marx-engels/1859/criticaep/">
         Per la Critica dell&apos;Economia Politica
         </a>, 1859
@@ -195,7 +194,7 @@ const Index = () => (
       </p>
 
       <p>
-        [^8] Per una concezione della società e altri scritti, Bari, Laterza, 1971, pp. 35-47; <a href="http://la.utexas.edu/users/hcleaver/368/368OwenNewViewtable.pdf">A New View of Society</a>,
+        [^8] Per una concezione della società e altri scritti, Bari, Laterza, 1971, pp. 35-47;  &nbsp; <a href="http://la.utexas.edu/users/hcleaver/368/368OwenNewViewtable.pdf">A New View of Society</a>,
           New York, MacMillan, 1972, pp. 41-60
       </p>
 
@@ -204,12 +203,12 @@ const Index = () => (
       </p>
 
       <p>
-        [^10] Nick Bostrom, <a href="http://www.nickbostrom.com/existential/risks.html">Existential Risks</a>,
+        [^10] Nick Bostrom, <a href="http://www.nickbostrom.com/existential/risks.html">Existential Risks</a>,  &nbsp;
           Journal of Evolution and Technology, Vol. 9, No. 1 (2002)
       </p>
 
       <p>
-        [^11] Nick Bostrom,
+        [^11] Nick Bostrom,  &nbsp;
         <a href="http://www.nickbostrom.com/views/superintelligence.pdf">Superintelligence</a>, 2009
       </p>
     </article>

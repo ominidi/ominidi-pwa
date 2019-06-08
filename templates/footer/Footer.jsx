@@ -18,7 +18,7 @@ const Footer = () => (
       <br />
 
       <small>
-        Quest&apos;opera è distribuita con Licenza
+        Quest&apos;opera è distribuita con Licenza &nbsp;
 
         <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
           Creative Commons Attribuzione 4.0 Internazionale
@@ -28,7 +28,7 @@ const Footer = () => (
 
     <div className="footer__license">
       <small>
-        Il codice sorgente di quest&apos;opera è distribuito con Licenza
+        Il codice sorgente di quest&apos;opera è distribuito con Licenza &nbsp;
 
         <a href="https://github.com/ominidi/ominidi.org/blob/master/LICENSE" rel="license" title="Licenza MIT">
           MIT
