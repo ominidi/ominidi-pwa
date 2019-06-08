@@ -2,28 +2,28 @@ SEO:
   /index:
     title: "Ominidi.org"
     description: "Il sito web ufficiale di Ominidi.org"
-    ogUrl: "https://www.ominidi.org"
-    ogImage: "https://www.ominidi.org/img/logo.jpg"
+    ogUrl: "http://www.ominidi.org"
+    ogImage: "http://www.ominidi.org/img/logo.jpg"
   /manifest:
     title: "Manifesto - Ominidi.org"
     description: "Il Manifesto di Ominidi.org, il cuore pulsante e primitivo della sua filosofia."
-    ogUrl: "https://www.ominidi.org/manifesto"
-    ogImage: "https://www.ominidi.org/img/manifesto.jpg"
+    ogUrl: "http://www.ominidi.org/manifesto"
+    ogImage: "http://www.ominidi.org/img/manifesto.jpg"
   /photos:
     title: "Foto - Ominidi.org"
     description: "Tutte le foto dei luoghi dove gli Ominidi si sono riappropriati degli spazi dell Homo Sapiens"
-    ogUrl: "https://www.ominidi.org/foto"
-    ogImage: "https://www.ominidi.org/img/foto.jpg"
+    ogUrl: "http://www.ominidi.org/foto"
+    ogImage: "http://www.ominidi.org/img/foto.jpg"
   /attributions:
     title: "Attributions - Ominidi.org"
     description: "Ominidi.org è stato creato con software e materiali con licenza Free Software, Open Source o CreativeCommons. Qui puoi trovare l'elenco di tutti i software e i materiali utilizzati per la sua creazione"
-    ogUrl: "https://www.ominidi.org/attributions"
-    ogImage: "https://www.ominidi.org/img/attributions.jpg"
+    ogUrl: "http://www.ominidi.org/attributions"
+    ogImage: "http://www.ominidi.org/img/attributions.jpg"
   /downloads:
     title: "Downloads - Ominidi.org"
     description: "La pagina dove è possibile scaricare tutte le risose e i materiali relativi di Ominidi.org"
-    ogUrl: "https://www.ominidi.org/downloads"
-    ogImage: "https://www.ominidi.org/img/downloads.jpg"
+    ogUrl: "http://www.ominidi.org/downloads"
+    ogImage: "http://www.ominidi.org/img/downloads.jpg"
 
 navItems:
   - href: "/"

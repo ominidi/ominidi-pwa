@@ -1,7 +1,11 @@
 import React from 'react';
+import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
 
-const Navigation = ({ navItems }) => (
+export const Navigation = ({
+  router,
+  navItems,
+}) => (
   <nav className="navigation">
     <ul className="navigation__menu">
       {
@@ -13,7 +17,7 @@ const Navigation = ({ navItems }) => (
             <a
               href={item.href}
               title={item.title}
-              className={`navigation__link ${item.className}`}
+              className={`navigation__link ${item.className} ${router.pathname === item.href ? 'is-active' : ''}`}
               // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{
                 __html: item.icon,
@@ -27,6 +31,9 @@ const Navigation = ({ navItems }) => (
 );
 
 Navigation.propTypes = {
+  router: PropTypes.shape({
+    pathname: PropTypes.string,
+  }).isRequired,
   navItems: PropTypes.arrayOf(
     PropTypes.shape({
       href: PropTypes.string,
@@ -40,4 +47,4 @@ Navigation.defaultProps = {
   navItems: [],
 };
 
-export default Navigation;
+export default withRouter(Navigation);

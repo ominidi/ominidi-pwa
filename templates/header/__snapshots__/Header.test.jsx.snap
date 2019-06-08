@@ -25,7 +25,7 @@ exports[`Header should render correctly 1`] = `
         className="navigation__item"
       >
         <a
-          className="navigation__link undefined"
+          className="navigation__link undefined is-active"
           dangerouslySetInnerHTML={
             Object {
               "__html": "to-manifest",
@@ -39,7 +39,7 @@ exports[`Header should render correctly 1`] = `
         className="navigation__item"
       >
         <a
-          className="navigation__link undefined"
+          className="navigation__link undefined "
           dangerouslySetInnerHTML={
             Object {
               "__html": "to-photos",
