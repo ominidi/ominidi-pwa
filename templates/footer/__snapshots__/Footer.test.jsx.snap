@@ -26,7 +26,7 @@ exports[`Footer should render correctly 1`] = `
     </a>
     <br />
     <small>
-      Quest'opera è distribuita con Licenza
+      Quest'opera è distribuita con Licenza  
       <a
         href="http://creativecommons.org/licenses/by/4.0/"
         rel="license"
@@ -39,7 +39,7 @@ exports[`Footer should render correctly 1`] = `
     className="footer__license"
   >
     <small>
-      Il codice sorgente di quest'opera è distribuito con Licenza
+      Il codice sorgente di quest'opera è distribuito con Licenza  
       <a
         href="https://github.com/ominidi/ominidi.org/blob/master/LICENSE"
         rel="license"
