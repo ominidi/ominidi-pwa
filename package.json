@@ -5,6 +5,7 @@
   "main": "index.js",
   "repository": "git@github.com:ominidi/ominidi.org.git",
   "scripts": {
+    "update-i": "npm-check -u",
     "lint": "eslint . --ext js,jsx",
     "test": "jest",
     "dev": "node server.js",
@@ -22,29 +23,28 @@
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "breakpoint-sass": "^2.7.1",
-    "express": "^4.16.4",
-    "js-yaml-loader": "^1.0.1",
-    "newrelic": "^5.7.0",
+    "express": "^4.17.1",
+    "js-yaml-loader": "^1.2.0",
+    "newrelic": "^5.9.1",
     "next": "^8.1.0",
     "next-compose-plugins": "^2.2.0",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "three": "^0.104.0"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.12.1",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.17.0",
+    "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4",
-    "jest": "^24.7.1",
-    "react-test-renderer": "^16.8.6",
-    "sinon": "^7.3.2"
+    "eslint-plugin-react": "^7.13.0",
+    "jest": "^24.8.0",
+    "npm-check": "^5.9.0",
+    "react-test-renderer": "^16.8.6"
   }
 }
