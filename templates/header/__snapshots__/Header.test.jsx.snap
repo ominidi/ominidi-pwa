@@ -17,39 +17,6 @@ exports[`Header should render correctly 1`] = `
   </h1>
   <nav
     className="navigation"
-  >
-    <ul
-      className="navigation__menu"
-    >
-      <li
-        className="navigation__item"
-      >
-        <a
-          className="navigation__link undefined is-active"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "to-manifest",
-            }
-          }
-          href="/"
-          title="Manifest"
-        />
-      </li>
-      <li
-        className="navigation__item"
-      >
-        <a
-          className="navigation__link undefined "
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "to-photos",
-            }
-          }
-          href="/photos"
-          title="Photos"
-        />
-      </li>
-    </ul>
-  </nav>
+  />
 </header>
 `;

@@ -4,6 +4,7 @@ import Header from './Header';
 
 jest.mock('next/router', () => ({
   pathname: '/',
+  withRouter: jest.fn(() => () => <nav className="navigation" />),
 }));
 
 describe('Header', () => {

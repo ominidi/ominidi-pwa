@@ -6,7 +6,7 @@ import { Navigation } from './Navigation';
 
 jest.mock('next/router', () => ({
   pathname: '/photos',
-  withRouter: () => <div />,
+  withRouter: () => () => <div />,
 }));
 
 describe('Navigation', () => {
