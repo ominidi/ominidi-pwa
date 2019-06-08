@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Photo should render correctly 1`] = `
+<div
+  className="photos__item"
+  data-id="1"
+>
+  <article
+    className="card"
+  >
+    <figure
+      className="card__picture"
+    >
+      <img
+        alt="An alt"
+        src="http://www.foo/img.jpg"
+        title="An alt"
+      />
+    </figure>
+    <footer
+      className="card__footer"
+    >
+      <h5
+        className="card__caption title-6"
+      >
+        A caption
+      </h5>
+    </footer>
+  </article>
+</div>
+`;

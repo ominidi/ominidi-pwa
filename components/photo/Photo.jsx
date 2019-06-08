@@ -11,18 +11,23 @@ import PropTypes from 'prop-types';
  */
 const Photo = ({
   id,
-  message,
-  fullPicture,
+  src,
+  alt,
+  caption,
 }) => (
   <div className="photos__item" data-id={id}>
     <article className="card">
       <figure className="card__picture">
-        <img src={fullPicture} title={message} alt={message} />
+        <img
+          src={src}
+          title={alt}
+          alt={alt}
+        />
       </figure>
 
       <footer className="card__footer">
         <h5 className="card__caption title-6">
-          { message }
+          { caption }
         </h5>
       </footer>
     </article>
@@ -31,8 +36,14 @@ const Photo = ({
 
 Photo.propTypes = {
   id: PropTypes.string.isRequired,
-  message: PropTypes.string.isRequired,
-  fullPicture: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string,
+  caption: PropTypes.string,
+};
+
+Photo.defaultProps = {
+  alt: null,
+  caption: null,
 };
 
 export default Photo;

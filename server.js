@@ -14,7 +14,7 @@ app.prepare().then(() => {
 
   server.get('/', (req, res) => app.render(req, res, '/index', req.query));
   server.get('/manifesto', (req, res) => app.render(req, res, '/index', req.query));
-  server.get('/foto', (req, res) => app.render(req, res, '/photos', req.query));
+  server.get('/photos', (req, res) => app.render(req, res, '/photos', req.query));
   server.get('/attributions', (req, res) => app.render(req, res, '/attributions', req.query));
   server.get('/downloads', (req, res) => app.render(req, res, '/downloads', req.query));
   server.get('*', (req, res) => handle(req, res));
