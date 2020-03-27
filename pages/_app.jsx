@@ -1,24 +1,21 @@
 import React from 'react';
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import Head from 'next/head';
 import Meta from '../templates/meta/Meta';
-import data from '../data/common.yml';
-
-async function getSeo(pathname) {
-  const { SEO } = data;
-  return SEO[pathname] || SEO['/index'];
-}
+import getSeo from '../utils/seo';
 
 class MyApp extends App {
   render() {
     const {
       Component,
       pageProps,
-      SEO,
+      router,
     } = this.props;
 
+    const SEO = getSeo(router.pathname);
+
     return (
-      <Container>
+      <>
         <Head>
           <title>
             {SEO.title}
@@ -31,21 +28,9 @@ class MyApp extends App {
           />
         </Head>
         <Component {...pageProps} />
-      </Container>
+      </>
     );
   }
 }
-
-MyApp.getInitialProps = async ({ Component, ctx }) => {
-  let pageProps = {};
-
-  if (Component.getInitialProps) {
-    pageProps = await Component.getInitialProps(ctx);
-  }
-
-  const SEO = await getSeo(ctx.pathname);
-
-  return { pageProps, SEO };
-};
 
 export default MyApp;
