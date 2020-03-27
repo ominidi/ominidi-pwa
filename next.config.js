@@ -10,7 +10,7 @@ module.exports = withPlugins([
     /* eslint-disable-next-line */
     config.resolve.alias = {
       ...config.resolve.alias,
-      '~static': path.join(__dirname, 'static'),
+      '~public': path.join(__dirname, 'public'),
       '~components': path.join(__dirname, 'components'),
       '~templates': path.join(__dirname, 'template'),
     };

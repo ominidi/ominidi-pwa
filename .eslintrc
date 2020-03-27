@@ -16,7 +16,7 @@
       {
         "commonjs": true,
         "ignore": [
-          "^~static",
+          "^~public",
           "^~components",
           "^~templates"
         ]

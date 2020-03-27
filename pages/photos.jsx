@@ -4,7 +4,7 @@
 import React from 'react';
 import Page from '../layouts/page/Page';
 import Photo from '../components/photo/Photo';
-import '../static/scss/style.scss';
+import '../public/scss/style.scss';
 
 const Photos = () => (
   <Page title="Foto">
@@ -14,7 +14,7 @@ const Photos = () => (
           <Photo
             id={`photo-${i}`}
             key={`photo-${i}`}
-            src={`../static/assets/photos/${i + 1}.jpg`}
+            src={`../assets/photos/${i + 1}.jpg`}
           />
         ))
       }
