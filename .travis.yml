@@ -8,9 +8,3 @@ script:
   - npm run build
 after_success:
  - bash <(curl -s https://codecov.io/bash)
-deploy:
-  provider: heroku
-  app: ominidi-pwa
-  skip_cleanup: true
-  api_key:
-    secure: $HEROKU_API_KEY
