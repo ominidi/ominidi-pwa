@@ -19,11 +19,8 @@ app.prepare().then(() => {
   server.get('/downloads', (req, res) => app.render(req, res, '/downloads', req.query));
   server.get('*', (req, res) => handle(req, res));
 
-  server.listen(port, host, (err) => {
-    if (err) {
-      throw err;
-    }
-
-    console.log(`> Ready on ${host}:${port}`);
+  server.listen(port, host, () => {
+    // eslint-disable-next-line no-console
+    console.log(`Ominidi.org ready on ${host}:${port}`);
   });
 });

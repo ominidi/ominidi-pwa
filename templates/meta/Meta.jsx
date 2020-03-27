@@ -7,7 +7,7 @@ const Meta = ({
   ogUrl,
   ogImage,
 }) => (
-  <React.Fragment>
+  <>
     <meta
       name="description"
       content={description}
@@ -48,7 +48,7 @@ const Meta = ({
       content="Ominidi.org"
       key="og:site_name"
     />
-  </React.Fragment>
+  </>
 );
 
 Meta.propTypes = {

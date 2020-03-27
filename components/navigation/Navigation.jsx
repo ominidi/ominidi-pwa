@@ -1,3 +1,5 @@
+/* eslint-disable react/no-danger */
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
@@ -9,7 +11,7 @@ export const Navigation = ({
   <nav className="navigation">
     <ul className="navigation__menu">
       {
-        navItems.map(item => (
+        navItems.map((item) => (
           <li
             className="navigation__item"
             key={item.href}
@@ -18,7 +20,6 @@ export const Navigation = ({
               href={item.href}
               title={item.title}
               className={`navigation__link ${item.className} ${router.pathname === item.href ? 'is-active' : ''}`}
-              // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{
                 __html: item.icon,
               }}

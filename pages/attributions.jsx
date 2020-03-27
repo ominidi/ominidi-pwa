@@ -24,42 +24,42 @@ const Attributions = () => (
       <ul>
         <li>
           <a href="http://www.openoffice.org/it/" title="Apache Open Office">
-              Apache Open Office
+            Apache Open Office
           </a>
         </li>
         <li>
           <a href="https://inkscape.org/it/" title="Inkscape">
-              Inkscape
+            Inkscape
           </a>
         </li>
         <li>
           <a href="https://www.getpaint.net/" title="Paint.net">
-              Paint.net
+            Paint.net
           </a>
         </li>
         <li>
           <a href="http://pencil.evolus.vn/" title="Pencil Project">
-              Pencil Project
+            Pencil Project
           </a>
         </li>
         <li>
           <a href="https://www.jetbrains.com/idea/#chooseYourEdition" title="IntelliJ Community Edition">
-              IntelliJ Community Edition
+            IntelliJ Community Edition
           </a>
         </li>
         <li>
           <a href="https://www.virtualbox.org/" title="Virtual Box">
-              Virtual Box
+            Virtual Box
           </a>
         </li>
         <li>
           <a href="https://github.com/" title="Github">
-              Github
+            Github
           </a>
         </li>
         <li>
           <a href="https://www.chromium.org/Home" title="Chromium">
-              Chromium
+            Chromium
           </a>
         </li>
       </ul>
@@ -71,17 +71,17 @@ const Attributions = () => (
       <ul>
         <li>
           <a href="https://git-scm.com/" title="Git">
-              Git
+            Git
           </a>
         </li>
         <li>
           <a href="https://github.com/facebook/react" title="React">
-              React
+            React
           </a>
         </li>
         <li>
           <a href="https://threejs.org/" title="Three.js">
-              Three.js
+            Three.js
           </a>
         </li>
       </ul>

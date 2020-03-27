@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
@@ -51,8 +52,8 @@ describe('Navigation', () => {
     expect(wrapper.find('.navigation__item').length).toEqual(navItems.length);
 
     wrapper.find('.navigation__link').forEach((item) => {
-      expect(navItems.some(element => element.href === item.prop('href'))).toBe(true);
-      expect(navItems.some(element => element.title === item.prop('title'))).toBe(true);
+      expect(navItems.some((element) => element.href === item.prop('href'))).toBe(true);
+      expect(navItems.some((element) => element.title === item.prop('title'))).toBe(true);
     });
   });
 
