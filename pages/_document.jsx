@@ -1,5 +1,7 @@
 import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, {
+  Html, Head, Main, NextScript,
+} from 'next/document';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -9,7 +11,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <html lang="it">
+      <Html lang="it">
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +28,7 @@ class MyDocument extends Document {
           </main>
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
